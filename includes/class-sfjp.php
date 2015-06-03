@@ -95,6 +95,17 @@ class Storefront_Jetpack {
 	 * @access   private
 	 */
 	private function load_dependencies() {
+		global $sfjp_modules;
+
+		/**
+		 * Variables Used throughout the plugin
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/sfjp-vars.php';
+
+		/**
+		 * Functions Used throughout the plugin
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/sfjp-functions.php';
 
 		/**
 		 * The class responsible for orchestrating the actions and filters of the
@@ -156,6 +167,7 @@ class Storefront_Jetpack {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'init_settings', 999 );
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'settings_page', 999 );
+		$this->loader->add_action( 'sfjp_mods', $plugin_admin, 'modules', 999 );
 
 	}
 

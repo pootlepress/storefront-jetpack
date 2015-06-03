@@ -23,6 +23,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+define( 'StorefrontJetpackUrl', plugin_dir_url( __FILE__ ) );
+
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-sfjp-activator.php

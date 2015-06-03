@@ -2,3 +2,92 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+#sfjp-settings-page .mod-cards {
+    font-size: 0;
+    margin: -0.7%;
+}
+
+#sfjp-settings-page .mod-cards:after, #sfjp-settings-page .mod-card:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#sfjp-settings-page .mod-cards * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin:0;
+}
+
+#sfjp-settings-page .mod-card-wrap{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.7%;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#sfjp-settings-page .mod-card {
+    background: #fff;
+}
+
+#sfjp-settings-page .mod-card .deactivate {
+    display: none;
+}
+
+#sfjp-settings-page .mod-card .activate {
+    display: inline-block;
+}
+
+#sfjp-settings-page .mod-card.active .deactivate {
+    display: inline-block;
+}
+
+#sfjp-settings-page .mod-card.active .activate {
+    display: none;
+}
+
+#sfjp-settings-page .mod-img {
+    width: 140px;
+    padding: 10px;
+    float: left;
+}
+
+#sfjp-settings-page .mod-details {
+    margin-left: 140px;
+    margin-right: 110px;
+    padding: 15px 0;
+}
+
+#sfjp-settings-page .mod-controls {
+    width: 100px;
+    padding: 10px;
+    float: right;
+    text-align: right;
+}
+
+@media only screen and (max-width:782px) {
+    #sfjp-settings-page .mod-card-wrap {
+        width: 100%;
+        padding:1%;
+    }
+
+    #sfjp-settings-page .mod-cards {
+        margin: -1%;
+    }
+
+}
+@media only screen and (min-width: 1600px) {
+    #sfjp-settings-page .mod-card-wrap {
+        width: 33%;
+        padding:0.5%;
+    }
+
+    #sfjp-settings-page .mod-cards {
+        margin: -0.5%;
+    }
+}

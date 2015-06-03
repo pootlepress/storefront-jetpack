@@ -111,25 +111,13 @@ class Sfjp_Admin {
 			'sfjp_section',
 			'Storefront Jetpack',
 			array( $this, 'sfjp_section_callback', ),
-			'storefront-jetpack'
-		);
-
-		// Next, we will introduce the fields for toggling the visibility of content elements.
-		add_settings_field(
-			'show_header',
-			'Header',
-			array( $this, 'sfjp_field_callback', ),
-			'general',
-			'sfjp_section',
-			array(
-				'Activate this setting to display the header.'
-			)
+			'storefront_jetpack'
 		);
 
 		// Finally, we register the fields with WordPress
 		register_setting(
-			'general',
-			'show_header'
+			'storefront_jetpack',
+			'sfjp_mods_enabled'
 		);
 	}
 
@@ -143,7 +131,7 @@ class Sfjp_Admin {
 			'Storefront Jetpack',
 			'Storefront Jetpack',
 			'administrator',
-			'storefront-jetpack',
+			'storefront_jetpack',
 			array( $this, 'sfjp_page_callback', )
 		);
 	}
@@ -163,5 +151,16 @@ class Sfjp_Admin {
 	 * @since    1.0.0
 	 */
 	public function sfjp_section_callback() {}
+
+	/**
+	 * Add the settings page
+	 *
+	 * @since    1.0.0
+	 */
+	public function modules( $mods ) {
+		global $sfjp_modules;
+
+		return array_merge( $mods, $sfjp_modules );
+	}
 
 }
