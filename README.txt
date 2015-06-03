@@ -1,7 +1,7 @@
 === Storefront Jetpack ===
 
 Contributors: nickburne, pootlepress
-Plugin Name: Storefront Jetpack
+Plugin Name: Storefront Jetpack by PootlePress
 Plugin URI:
 Tags: storefront, storefront jetpack
 Author URI:
