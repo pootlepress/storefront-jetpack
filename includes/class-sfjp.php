@@ -9,8 +9,8 @@
  * @link       http://pootlepress.co.uk
  * @since      1.0.0
  *
- * @package    Sfjp
- * @subpackage Sfjp/includes
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Sfjp
- * @subpackage Sfjp/includes
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/includes
  * @author     PootlePress <nick@pootlepress.co.uk>
  */
-class Sfjp {
+class Storefront_Jetpack {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -154,6 +154,8 @@ class Sfjp {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'init_settings', 999 );
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'settings_page', 999 );
 
 	}
 

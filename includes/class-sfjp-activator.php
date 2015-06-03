@@ -6,8 +6,8 @@
  * @link       http://pootlepress.co.uk
  * @since      1.0.0
  *
- * @package    Sfjp
- * @subpackage Sfjp/includes
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/includes
  */
 
 /**
@@ -16,8 +16,8 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Sfjp
- * @subpackage Sfjp/includes
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/includes
  * @author     PootlePress <nick@pootlepress.co.uk>
  */
 class Sfjp_Activator {

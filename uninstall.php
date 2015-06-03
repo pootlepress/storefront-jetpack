@@ -22,7 +22,7 @@
  * @link       http://pootlepress.co.uk
  * @since      1.0.0
  *
- * @package    Sfjp
+ * @package    Storefront_Jetpack
  */
 
 // If uninstall not called from WordPress, then exit.

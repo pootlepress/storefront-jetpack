@@ -6,8 +6,8 @@
  * @link       http://pootlepress.co.uk
  * @since      1.0.0
  *
- * @package    Sfjp
- * @subpackage Sfjp/public
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/public
  */
 
 /**
@@ -16,8 +16,8 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Sfjp
- * @subpackage Sfjp/public
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/public
  * @author     PootlePress <nick@pootlepress.co.uk>
  */
 class Sfjp_Public {

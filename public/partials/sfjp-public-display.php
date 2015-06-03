@@ -8,8 +8,8 @@
  * @link       http://pootlepress.co.uk
  * @since      1.0.0
  *
- * @package    Sfjp
- * @subpackage Sfjp/public/partials
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/public/partials
  */
 ?>
 

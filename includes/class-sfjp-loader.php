@@ -6,8 +6,8 @@
  * @link       http://pootlepress.co.uk
  * @since      1.0.0
  *
- * @package    Sfjp
- * @subpackage Sfjp/includes
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/includes
  */
 
 /**
@@ -17,8 +17,8 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Sfjp
- * @subpackage Sfjp/includes
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/includes
  * @author     PootlePress <nick@pootlepress.co.uk>
  */
 class Sfjp_Loader {

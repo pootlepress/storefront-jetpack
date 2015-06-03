@@ -1,18 +1,6 @@
 <?php
 
 /**
- * The plugin bootstrap file
- *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
- * @link              http://pootlepress.co.uk
- * @since             1.0.0
- * @package           Sfjp
- *
- * @wordpress-plugin
  * Plugin Name:       Storefront Jetpack
  * Plugin URI:        @TODO
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
@@ -23,6 +11,11 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       sfjp
  * Domain Path:       /languages
+ *
+ * @link              http://pootlepress.co.uk
+ * @since             1.0.0
+ * @package           Storefront_Jetpack
+ *
  */
 
 // If this file is called directly, abort.
@@ -68,7 +61,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-sfjp.php';
  */
 function run_sfjp() {
 
-	$plugin = new Sfjp();
+	$plugin = new Storefront_Jetpack();
 	$plugin->run();
 
 }

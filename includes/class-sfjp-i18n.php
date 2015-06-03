@@ -9,8 +9,8 @@
  * @link       http://pootlepress.co.uk
  * @since      1.0.0
  *
- * @package    Sfjp
- * @subpackage Sfjp/includes
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/includes
  */
 
 /**
@@ -20,8 +20,8 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Sfjp
- * @subpackage Sfjp/includes
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/includes
  * @author     PootlePress <nick@pootlepress.co.uk>
  */
 class Sfjp_i18n {

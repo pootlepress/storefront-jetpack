@@ -6,8 +6,8 @@
  * @link       http://pootlepress.co.uk
  * @since      1.0.0
  *
- * @package    Sfjp
- * @subpackage Sfjp/admin
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/admin
  */
 
 /**
@@ -16,8 +16,8 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Sfjp
- * @subpackage Sfjp/admin
+ * @package    Storefront_Jetpack
+ * @subpackage Storefront_Jetpack/admin
  * @author     PootlePress <nick@pootlepress.co.uk>
  */
 class Sfjp_Admin {
@@ -99,5 +99,69 @@ class Sfjp_Admin {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sfjp-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
+
+	/**
+	 * Initiates Settings API sections, controls and settings
+	 *
+	 * @since    1.0.0
+	 */
+	public function init_settings(){
+		// First, we register a section. This is necessary since all future options must belong to one.
+		add_settings_section(
+			'sfjp_section',
+			'Storefront Jetpack',
+			array( $this, 'sfjp_section_callback', ),
+			'storefront-jetpack'
+		);
+
+		// Next, we will introduce the fields for toggling the visibility of content elements.
+		add_settings_field(
+			'show_header',
+			'Header',
+			array( $this, 'sfjp_field_callback', ),
+			'general',
+			'sfjp_section',
+			array(
+				'Activate this setting to display the header.'
+			)
+		);
+
+		// Finally, we register the fields with WordPress
+		register_setting(
+			'general',
+			'show_header'
+		);
+	}
+
+	/**
+	 * Add the settings page
+	 *
+	 * @since    1.0.0
+	 */
+	public function settings_page() {
+		add_theme_page(
+			'Storefront Jetpack',
+			'Storefront Jetpack',
+			'administrator',
+			'storefront-jetpack',
+			array( $this, 'sfjp_page_callback', )
+		);
+	}
+
+	/**
+	 * Add the settings page
+	 *
+	 * @since    1.0.0
+	 */
+	public function sfjp_page_callback() {
+		include 'partials/sfjp-admin-display.php';
+	}
+
+	/**
+	 * Add the settings page
+	 *
+	 * @since    1.0.0
+	 */
+	public function sfjp_section_callback() {}
 
 }
