@@ -3,7 +3,7 @@
 Contributors: pootlepress, nickburne
 Plugin Name: Storefront Jetpack by PootlePress
 Plugin URI: http://www.pootlepress.com/storefront-jetpack
-Tags: storefront, storefront jetpack
+Tags: storefront, store front, storefront jetpack, storefront extensions, store front extensions, storefront align menu right, storefront logo, store front logo, storefront custom logo, storefront plugins, store front plugins
 Author URI: http://www.pootlepress.com
 Author: PootlePress
 Donate link:
