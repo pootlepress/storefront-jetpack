@@ -52,6 +52,8 @@ class Sfjp_Public {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
+		$this->call_enabled_mods();
+
 	}
 
 	/**
@@ -100,4 +102,75 @@ class Sfjp_Public {
 
 	}
 
+	/**
+	 * Calls the default Storefront Jetpack mods
+	 *
+	 * @since    1.0.0
+	 */
+	private function call_enabled_mods() {
+
+		$s = get_option( 'sfjp_mods_enabled', array() );
+
+		foreach ( $s as $mod => $status ) {
+
+			$method_name = 'mod_activation_' . $mod;
+
+			if ( ! empty( $status ) and method_exists( $this, $method_name ) ) {
+
+				$this->$method_name();
+			}
+		}
+	}
+
+	/**
+	 * Calls the Align menu right mod
+	 *
+	 * @since    1.0.0
+	 */
+	private function mod_activation_align_menu_right(){
+
+		include_once 'mods/sfx-amr/plugin.php';
+	}
+
+	/**
+	 * Calls Add top bar mod
+	 *
+	 * @since    1.0.0
+	 */
+	private function mod_activation_add_top_bar(){
+
+		include_once 'mods/top-bar.php';
+
+	}
+
+	/**
+	 * Calls the Remove header search bar mod
+	 *
+	 * @since    1.0.0
+	 */
+	private function mod_activation_remove_header_search(){
+
+		add_action( 'init', array( $this, 'remove_header_search' ) );
+	}
+
+	/**
+	 * Calls the Remove header search bar mod
+	 *
+	 * @action init
+	 * @since    1.0.0
+	 */
+	public function remove_header_search() {
+
+		remove_action( 'storefront_header', 'storefront_product_search', 	40 );
+	}
+
+	/**
+	 * Calls the custom logo mod
+	 *
+	 * @since    1.0.0
+	 */
+	private function mod_activation_custom_logo(){
+
+		include_once 'mods/custom-logo.php';
+	}
 }

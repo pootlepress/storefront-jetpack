@@ -14,7 +14,6 @@
 
 $s = get_option( 'sfjp_mods_enabled', '' );
 $mods = apply_filters( 'sfjp_mods', array() );
-echo '<pre>' . print_r( $s, true ) . '</pre>';
 ?>
 
 <div id="sfjp-settings-page" class="wrap">
@@ -39,7 +38,7 @@ echo '<pre>' . print_r( $s, true ) . '</pre>';
 							</div>
 
 							<div class="mod-controls">
-								<a class="button button-primary activate">Activate</a>
+								<a class="button pootle activate">Activate</a>
 								<a class="button deactivate">Deactivate</a>
 								<input type="hidden" name="sfjp_mods_enabled[<?php echo $id; ?>]" value="<?php echo $s[ $id ] ? $s[ $id ] : ''; ?>">
 							</div>
