@@ -68,7 +68,7 @@ class Storefront_Jetpack {
 	 */
 	public function __construct() {
 
-		$this->plugin_name = 'sfjp';
+		$this->plugin_name = 'storefront-jetpack';
 		$this->version = '1.0.0';
 
 		$this->load_dependencies();

@@ -18,7 +18,10 @@ $mods = apply_filters( 'sfjp_mods', array() );
 
 <div id="sfjp-settings-page" class="wrap">
 	<h2>Storefront Jetpack</h2>
-	<p>Activate or Deactivate Storefront Jetpack features below and then click 'Save Changes'. Storefront Jetpack was created by PootlePress. Visit our <a href="http://www.pootlepress.com/store?utm_source=storefront-jetpack&utm_medium=plugin&utm_campaign=settings-page">store</a> to find out more about our other products. </p>
+	<p><?php
+		$message = 'Activate or Deactivate Storefront Jetpack features below and then click \'Save Changes\'. Storefront Jetpack was created by PootlePress. Visit our %1$s store %2$s to find out more about our other products.';
+		$link = ' <a href="http://www.pootlepress.com/store?utm_source=storefront-jetpack&utm_medium=plugin&utm_campaign=settings-page"> ';
+		printf( __( $message, 'storefront-jetpack' ), $link, ' </a> ' ); ?></p>
 	<?php settings_errors(); ?>
 
 	<form method="post" action="options.php">
@@ -38,18 +41,18 @@ $mods = apply_filters( 'sfjp_mods', array() );
 							</div>
 
 							<div class="mod-controls">
-								<a class="button pootle activate">Activate</a>
-								<a class="button deactivate">Deactivate</a>
+								<a class="button pootle activate"><?php _e( 'Activate', 'storefront-jetpack' ) ?></a>
+								<a class="button deactivate"><?php _e( 'Deactivate', 'storefront-jetpack' ) ?></a>
 								<input type="hidden" name="sfjp_mods_enabled[<?php echo $id; ?>]" value="<?php echo $s[ $id ] ? $s[ $id ] : ''; ?>">
 							</div>
 
 							<div class="mod-details">
 								<div class="mod-name">
-									<h4><a href="<?php echo $mod['url'] ?>" class="thickbox"><?php echo $mod['label'] ?></a></h4>
+									<h4><a href="<?php echo $mod['url'] ?>" class="thickbox"><?php _e( $mod['label'], 'storefront-jetpack' ) ?></a></h4>
 								</div>
 								<div class="desc mod-description">
 									<p class="mod-description"><?php echo $mod['description'] ?></p>
-									<p class="mod-authors"> <cite>By <a href="<?php echo $mod['author_url'] ?>"><?php echo $mod['author'] ?></a></cite></p>
+									<p class="mod-authors"> <cite><?php _e( 'By', 'storefront-jetpack' ) ?> <a href="<?php echo $mod['author_url'] ?>"><?php echo $mod['author'] ?></a></cite></p>
 								</div>
 							</div>
 						</div>

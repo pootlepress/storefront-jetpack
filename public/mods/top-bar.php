@@ -15,7 +15,7 @@ function sfjp_add_topbar() {
 	?>
 	<div id="sfjp-topbar">
 		<div class="col-full">
-			<p>&nbsp<?php echo get_theme_mod( 'sfjp_topbar_text', 'Your text here' ) ?></p>
+			<p>&nbsp<?php echo get_theme_mod( 'sfjp_topbar_text', "Hello! You can customize this text in Appearance > Customize ('Header' section)" ) ?></p>
 		</div>
 	</div>
 <?php
@@ -34,7 +34,7 @@ function sfjp_top_bar_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'sfjp_topbar_text' );
 
 	$wp_customize->add_control( 'sfjp_topbar_text', array(
-		'label'    => __( 'Topbar Text', 'sfjp' ),
+		'label'    => __( 'Topbar Text', 'storefront-jetpack' ),
 		'section'  => 'header_image',
 		'settings' => 'sfjp_topbar_text',
 		'priority' => 999,

@@ -9,7 +9,7 @@
  * Author URI:        http://www.pootlepress.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       sfjp
+ * Text Domain:       storefront-jetpack
  * Domain Path:       /languages
  *
  * @link              http://www.pootlepress.com

@@ -47,7 +47,7 @@ function sfjp_custom_logo_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'sfjp_custom_logo' );
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'sfjp_custom_logo', array(
-		'label'    => __( 'Logo', 'sfjp' ),
+		'label'    => __( 'Logo', 'storefront-jetpack' ),
 		'section'  => 'title_tagline',
 		'settings' => 'sfjp_custom_logo',
 	) ) );
