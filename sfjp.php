@@ -6,13 +6,13 @@
  * Description:       A powerful plugin with lots of features for WooThemes Storefront. Go to Appearance > Storefront Jetpack for settings page.
  * Version:           0.1
  * Author:            PootlePress
- * Author URI:        http://pootlepress.co.uk
+ * Author URI:        http://www.pootlepress.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       sfjp
  * Domain Path:       /languages
  *
- * @link              http://pootlepress.co.uk
+ * @link              http://www.pootlepress.com
  * @since             1.0.0
  * @package           Storefront_Jetpack
  *
