@@ -18,7 +18,7 @@ $mods = apply_filters( 'sfjp_mods', array() );
 
 <div id="sfjp-settings-page" class="wrap">
 	<h2>Storefront Jetpack</h2>
-	<p>Activate or Deactivate Storefront Jetpack features below. <a href="http://pootlepress.com/">Find more PootlePress Plugins here</a> </p>
+	<p>Activate or Deactivate Storefront Jetpack features below and then click 'Save Changes'. Storefront Jetpack was created by PootlePress. Visit our <a href="http://www.pootlepress.com/store?utm_source=storefront-jetpack&utm_medium=plugin&utm_campaign=settings-page">store</a> to find out more about our other products. </p>
 	<?php settings_errors(); ?>
 
 	<form method="post" action="options.php">

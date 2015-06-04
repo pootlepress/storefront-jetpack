@@ -63,12 +63,17 @@
     padding: 15px 0;
 }
 
+#sfjp-settings-page .mod-cards p.mod-description {
+    margin: 16px 0;
+}
+
 #sfjp-settings-page .mod-controls {
     width: 100px;
     padding: 10px 10px 10px 0;
     float: right;
     text-align: right;
 }
+
 .button.pootle {
     position: relative;
     z-index: 10;

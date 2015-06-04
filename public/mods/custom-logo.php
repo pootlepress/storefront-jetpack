@@ -8,14 +8,17 @@
 /**
  * Hooks custom logo function
  *
- * @action init
+ * @action wp
  * @since 1.0.0
  */
 function sfjp_custom_logo() {
-	remove_action( 'storefront_header', 'storefront_site_branding', 20 );
-	add_action( 'storefront_header', 'sfjp_display_custom_logo', 20 );
+	$logo_url = get_theme_mod( 'sfjp_custom_logo' );
+	if ( ! empty( $logo_url ) ) {
+		remove_action( 'storefront_header', 'storefront_site_branding', 20 );
+		add_action( 'storefront_header', 'sfjp_display_custom_logo', 20 );
+	}
 }
-add_action( 'init', 'sfjp_custom_logo' );
+add_action( 'wp', 'sfjp_custom_logo' );
 
 /**
  * Display custom logo
@@ -39,6 +42,8 @@ function sfjp_display_custom_logo() {
  */
 function sfjp_custom_logo_customizer( $wp_customize ) {
 
+	$wp_customize->get_section('title_tagline')->title = __( 'Logo, Site Title & Tagline' );
+
 	$wp_customize->add_setting( 'sfjp_custom_logo' );
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'sfjp_custom_logo', array(
@@ -47,4 +52,4 @@ function sfjp_custom_logo_customizer( $wp_customize ) {
 		'settings' => 'sfjp_custom_logo',
 	) ) );
 }
-add_action( 'customize_register', 'sfjp_custom_logo_customizer' );
+add_action( 'customize_register', 'sfjp_custom_logo_customizer', 999 );
