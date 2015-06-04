@@ -1,7 +1,7 @@
 === Storefront Jetpack ===
 
 Contributors: pootlepress, nickburne
-Plugin Name: Storefront Jetpack by PootlePress
+Plugin Name: Storefront Jetpack
 Plugin URI: http://www.pootlepress.com/storefront-jetpack
 Tags: storefront, store front, storefront jetpack, storefront extensions, store front extensions, storefront align menu right, storefront logo, store front logo, storefront custom logo, storefront plugins, store front plugins
 Author URI: http://www.pootlepress.com
@@ -10,7 +10,7 @@ Donate link:
 Requires at least: 4.1.0
 Tested up to: 4.2.2
 Stable tag: 1.0.0
-License: GPLv3 or later
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
