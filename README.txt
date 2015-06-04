@@ -2,12 +2,11 @@
 
 Contributors: pootlepress, nickburne
 Plugin Name: Storefront Jetpack by PootlePress
-Plugin URI:
+Plugin URI: http://www.pootlepress.com/storefront-jetpack
 Tags: storefront, storefront jetpack
-Author URI:
+Author URI: http://www.pootlepress.com
 Author: PootlePress
 Donate link:
-Tags:
 Requires at least: 4.1.0
 Tested up to: 4.1.0
 Stable tag: 1.0.0
