@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:       Storefront Jetpack
- * Plugin URI:        @TODO
+ * Plugin URI:        http://www.pootlepress.com
  * Description:       A powerful plugin with lots of features for WooThemes Storefront. Go to Appearance > Storefront Jetpack for settings page.
  * Version:           1.0.0
  * Author:            PootlePress
