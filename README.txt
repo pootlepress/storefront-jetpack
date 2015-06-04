@@ -1,6 +1,6 @@
 === Storefront Jetpack ===
 
-Contributors: nickburne, pootlepress
+Contributors: pootlepress, nickburne
 Plugin Name: Storefront Jetpack by PootlePress
 Plugin URI:
 Tags: storefront, storefront jetpack
