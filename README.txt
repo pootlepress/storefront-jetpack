@@ -1,17 +1,16 @@
 === Storefront Jetpack ===
 
-Contributors: nickburne, pootlepress
-Plugin Name: Storefront Jetpack by PootlePress
-Plugin URI:
-Tags: storefront, storefront jetpack
-Author URI:
+Contributors: pootlepress, nickburne
+Plugin Name: Storefront Jetpack
+Plugin URI: http://www.pootlepress.com/storefront-jetpack
+Tags: storefront, store front, storefront jetpack, storefront extensions, store front extensions, storefront align menu right, storefront logo, store front logo, storefront custom logo, storefront plugins, store front plugins
+Author URI: http://www.pootlepress.com
 Author: PootlePress
 Donate link:
-Tags:
 Requires at least: 4.1.0
-Tested up to: 4.1.0
+Tested up to: 4.2.2
 Stable tag: 1.0.0
-License: GPLv3 or later
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
@@ -35,16 +34,16 @@ Installing "Storefront Jetpack" can be done either by searching for "Storefront 
 
 == Screenshots ==
 
-1. Admin screen
+1. Main settings page under Appearance > Storefront Jetpack
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-* 2015-23-01
+= 0.1 =
+* 2015-04-06
 * Initial release. Woo!
 
 == Changelog ==
 
-= 1.0.0 =
-* 2015-23-01
+= 0.1 =
+* 2015-04-06
 * Initial release. Woo!
