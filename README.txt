@@ -39,12 +39,12 @@ Installing "Storefront Jetpack" can be done either by searching for "Storefront 
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-* 2015-23-01
+= 0.1 =
+* 2015-04-06
 * Initial release. Woo!
 
 == Changelog ==
 
-= 1.0.0 =
-* 2015-23-01
+= 0.1 =
+* 2015-04-06
 * Initial release. Woo!
