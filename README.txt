@@ -35,7 +35,7 @@ Installing "Storefront Jetpack" can be done either by searching for "Storefront 
 
 == Screenshots ==
 
-1. Admin screen
+1. Main settings page under Appearance > Storefront Jetpack
 
 == Upgrade Notice ==
 
